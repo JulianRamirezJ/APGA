@@ -1,0 +1,232 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  width: 100%;
+  height: 100px;
+  background: #2B822F;  
+  align-content: center;
+  text-align: center; 
+}
+
+.header .logo {
+  width: 100px;
+  height: 100px;
+}
+
+@media (max-width: 400px){
+  .header, .logo {
+    max-height: 75px;
+  }
+}
+
+#bs-example-navbar-collapse-1 a {
+  color: #FFFFFF;
+  border-radius: 5px;
+  padding: 5px 16px;
+}
+
+#bs-example-navbar-collapse-1 a:hover{
+  background: #FFFFFF;
+  color: #000000;
+}
+
+#mainNav {
+  background: #6FB662;
+}
+
+#mainNav a {
+  color: #FFFFFF;
+  border-radius: 5px;
+  padding: 5px 16px;
+}
+
+#mainNav a:hover {
+  background: #FFFFFF;
+  color: #000000;
+}
+
+#mainNav #sesion {
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.principal {
+  width: 100%;
+  height: 600px;
+  background: #ACDBA3;
+}
+
+.banner {
+  margin: auto;
+  position: relative;
+  width: 100%;
+  height: calc(75vh);
+  background-position: center;
+  background-size: 100% 700px;
+  background-repeat: no-repeat;
+  transition: all .1S ease-in-out;
+  background-image: url('../img/aguacates1.jpg');
+  animation: banner 28s infinite linear;
+  border-radius: 2px;
+}
+
+@media (max-width: 700px){
+  .banner {
+    max-width: 270px;
+    max-height: 200px;
+    background-size: 100% 100%;
+  }
+}
+
+@media (max-width: 700px){
+  .principal{
+    max-height: 250px;
+  }
+}
+
+@keyframes banner{
+  0%{
+    background-image: url('../img/aguacates1.jpg');
+  }
+  25%{
+    background-image: url('../img/aguacates1.jpg');
+  }
+  26%{
+    background-image: url('../img/aguacates2.jpg');
+  }
+  50%{
+    background-image: url('../img/aguacates2.jpg');
+  }
+  51%{
+    background-image: url('../img/aguacates3.jpg');
+  }
+  75%{
+    background-image: url('../img/aguacates3.jpg');
+  }
+  76%{
+    background-image: url('../img/aguacates4.jpg');
+  }
+  100%{
+    background-image: url('../img/aguacates4.jpg');
+  }
+}
+
+.letras-hover {
+  color: #378B45;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 160px;
+  font-weight: uppercase;
+  text-shadow:
+  -3px -3px 0 #000,  
+  3px -3px 0 #000,
+  -3px 3px 0 #000,
+  3px 3px 0 #000;
+}
+
+.letras-hover::before {
+  content: 'APGA';
+  font-size: 160px;
+  color: #E4FAEA;
+  position: absolute;
+  width: 0;
+  overflow: hidden;
+  transition: 0.9s;
+}
+
+@media (max-width: 700px) {
+  .letras-hover::before{
+    font-size: 70px;
+  }
+}
+
+.letras-hover:hover::before {
+  width: 100%;
+}
+
+@media (max-width: 700px){
+  .letras-hover{
+    font-size: 70px;
+  }
+}
+
+#maquina {
+  width: 290px;
+  min-height: 50px;
+  color: #CEEED2;
+  text-align: center;
+  font-size: 30px;  
+  margin: auto;
+  position: relative;
+  top: 40%;
+  text-shadow:
+  -1px -1px 0 #000,  
+  1px -1px 0 #000,
+  -1px 1px 0 #000,
+  1px 1px 0 #000;
+}
+
+
+@media (max-width: 700px){
+  #maquina {
+    font-size: 20px;
+  }
+}
+
+#quienes_somos {
+  background: #E8FFEA;
+  margin-top: 20px;
+  padding: 50px;
+}
+
+#quienes_somos img {
+  width: 400px;
+  height: 250px;
+  border: solid 5px black;
+}
+
+@media (max-width: 700px) {
+  #quienes_somos img {
+  width: 250px;
+  height: 150px;
+}
+}
+
+#font-tittle {
+  font-size: 80px;
+  color: #36A539;
+}
+
+h2 {
+  color: #696969; 
+}
+
+#iniciarsesion {
+  height: 200px;
+}
+
+#iniciarsesion .botonin {
+  width: 120px;
+  height: 80px;
+  background: #36A539;
+  border-radius: 5px;
+  border: none;
+}
+
+#iniciarsesion .botonin:hover {
+  background: #41B444;
+  color: black;
+}
+
+@media (max-width: 1000px) {
+  .botonin {
+    margin-top: 20px;
+  }
+}
