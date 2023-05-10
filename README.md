@@ -1,6 +1,7 @@
 # APGA
-## Repository for the proyect course APGA.
+## Repository for the course proyect APGA.
 
+## General Overview
 This project aims to provide an efficient inventory management system for Hass avocado farms, enabling effective control over the 
 various elements involved in the process. The system was expertly developed using a combination of robust technologies including PHP, 
 MySQL, JS, HTML, CSS, and Bootstrap.
@@ -15,3 +16,7 @@ handle a large volume of data, making it an ideal choice for farms of all sizes.
 
 Overall, this inventory management system provides a reliable and effective solution for Hass avocado farms, empowering administrators 
 with the ability to streamline operations, minimize wastage, and maximize profits.
+
+## Architecture
+
+The proyect was developed with a Domain Driven Design(DDR) architecture with different components as Categories, Providers, Products and Others.
